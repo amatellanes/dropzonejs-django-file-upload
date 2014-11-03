@@ -9,7 +9,7 @@
 	<body>
 
 		<!-- IMPORTANT enctype attribute! -->
-		<form class="dropzone" action="{% url "main:home" %}" method="post" enctype="multipart/form-data">
+		<form class="dropzone" id="myDropzone" action="{% url "main:home" %}" method="post" enctype="multipart/form-data">
 			{% csrf_token %}
 		</form>
 		<button id="submit-all">
